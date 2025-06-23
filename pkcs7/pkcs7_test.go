@@ -15,8 +15,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 var test1024Key, test2048Key, test3072Key, test4096Key *rsa.PrivateKey

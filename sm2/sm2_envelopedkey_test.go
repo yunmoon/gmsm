@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 func TestMarshalEnvelopedPrivateKey(t *testing.T) {

@@ -3,7 +3,7 @@ package padding
 import (
 	"errors"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 // https://datatracker.ietf.org/doc/html/rfc5652#section-6.3

@@ -10,7 +10,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/emmansun/gmsm/ecdh"
+	"github.com/yunmoon/gmsm/ecdh"
 	"golang.org/x/crypto/chacha20"
 )
 

@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 func ExampleSum() {

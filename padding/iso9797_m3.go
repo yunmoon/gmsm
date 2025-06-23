@@ -3,7 +3,7 @@ package padding
 import (
 	"errors"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 // The padded data comprises (in this order):
@@ -62,7 +62,7 @@ func (pad iso9797M3Padding) Unpad(src []byte) ([]byte, error) {
 			return nil, errors.New("padding: invalid padding header")
 		}
 	}
-	dstLen := int(byteorder.BEUint64(src[8:pad.BlockSize()])/8)
+	dstLen := int(byteorder.BEUint64(src[8:pad.BlockSize()]) / 8)
 	if dstLen < 0 || dstLen > srcLen-pad.BlockSize() {
 		return nil, errors.New("padding: invalid padding header")
 	}

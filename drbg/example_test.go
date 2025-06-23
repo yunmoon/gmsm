@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/emmansun/gmsm/drbg"
+	"github.com/yunmoon/gmsm/drbg"
 )
 
 func ExampleNewGmCtrDrbgPrng() {

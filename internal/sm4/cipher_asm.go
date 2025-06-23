@@ -6,9 +6,9 @@ import (
 	"crypto/cipher"
 	"os"
 
-	"github.com/emmansun/gmsm/internal/alias"
-	"github.com/emmansun/gmsm/internal/cpuid"
-	"github.com/emmansun/gmsm/internal/deps/cpu"
+	"github.com/yunmoon/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/cpuid"
+	"github.com/yunmoon/gmsm/internal/deps/cpu"
 )
 
 var supportSM4 = cpu.ARM64.HasSM4 && os.Getenv("DISABLE_SM4NI") != "1"

@@ -8,8 +8,8 @@ import (
 	"encoding/asn1"
 	"errors"
 
-	"github.com/emmansun/gmsm/pkcs"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/pkcs"
+	"github.com/yunmoon/gmsm/smx509"
 	"golang.org/x/crypto/cryptobyte"
 	cryptobyte_asn1 "golang.org/x/crypto/cryptobyte/asn1"
 )

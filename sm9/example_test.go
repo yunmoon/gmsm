@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/emmansun/gmsm/sm9"
+	"github.com/yunmoon/gmsm/sm9"
 	"golang.org/x/crypto/cryptobyte"
 )
 

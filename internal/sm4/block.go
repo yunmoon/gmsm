@@ -3,7 +3,7 @@ package sm4
 // [GM/T] SM4 GB/T 32907-2016
 
 import (
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 // Encrypt one block from src into dst, using the expanded key xk.

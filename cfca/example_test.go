@@ -10,8 +10,8 @@ import (
 	"encoding/pem"
 	"fmt"
 
-	"github.com/emmansun/gmsm/cfca"
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/cfca"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 func ExampleParseSM2() {

@@ -3,7 +3,7 @@ package padding
 import (
 	"errors"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 // Add a single bit with value 1 to the end of the data.

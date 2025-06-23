@@ -7,7 +7,7 @@ import (
 	"errors"
 	"hash"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 // Size the size of a SM3 checksum in bytes.

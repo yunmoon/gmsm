@@ -3,7 +3,7 @@ package sm4
 import (
 	"testing"
 
-	"github.com/emmansun/gmsm/cipher"
+	"github.com/yunmoon/gmsm/cipher"
 )
 
 func TestECBValidate(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/emmansun/gmsm/cipher"
+	"github.com/yunmoon/gmsm/cipher"
 )
 
 func ExampleNewECBEncrypter() {

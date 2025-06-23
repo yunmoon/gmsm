@@ -10,7 +10,7 @@ import (
 	"crypto/subtle"
 	"errors"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 // simpleBitPack10Bits encodes a polynomial f into a byte slice

@@ -2,7 +2,7 @@
 
 package bn256
 
-import "github.com/emmansun/gmsm/internal/deps/cpu"
+import "github.com/yunmoon/gmsm/internal/deps/cpu"
 
 var supportAVX2 = cpu.X86.HasAVX2
 

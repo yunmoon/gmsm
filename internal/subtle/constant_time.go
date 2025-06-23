@@ -3,7 +3,7 @@ package subtle
 import (
 	"math/bits"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 func ConstantTimeAllZero(bytes []byte) int {

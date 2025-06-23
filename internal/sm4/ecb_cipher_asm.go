@@ -5,7 +5,7 @@ package sm4
 import (
 	"crypto/cipher"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 // Assert that sm4CipherAsm implements the ecbEncAble and ecbDecAble interfaces.

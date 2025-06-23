@@ -5,8 +5,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/sm4"
+	"github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 var hctrSM4TestVectors = []struct {

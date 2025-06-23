@@ -7,9 +7,9 @@ import (
 	"io"
 	"math/bits"
 
-	"github.com/emmansun/gmsm/internal/randutil"
-	sm2ec "github.com/emmansun/gmsm/internal/sm2ec"
-	"github.com/emmansun/gmsm/internal/subtle"
+	"github.com/yunmoon/gmsm/internal/randutil"
+	sm2ec "github.com/yunmoon/gmsm/internal/sm2ec"
+	"github.com/yunmoon/gmsm/internal/subtle"
 )
 
 type sm2Curve struct {

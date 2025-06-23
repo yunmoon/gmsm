@@ -4,7 +4,7 @@
 
 //go:build ignore
 
-package main
+package sm2ec
 
 // Running this generator requires addchain v0.4.0, which can be installed with
 //
@@ -24,7 +24,7 @@ import (
 	"strings"
 	"text/template"
 
-	_sm2ec "github.com/emmansun/gmsm/sm2/sm2ec"
+	_sm2ec "github.com/yunmoon/gmsm/sm2/sm2ec"
 )
 
 var curves = []struct {
@@ -34,9 +34,9 @@ var curves = []struct {
 	BuildTags string
 }{
 	{
-		P:       "SM2P256",
-		Element: "fiat.SM2P256Element",
-		Params: _sm2ec.P256().Params(),
+		P:         "SM2P256",
+		Element:   "fiat.SM2P256Element",
+		Params:    _sm2ec.P256().Params(),
 		BuildTags: "purego || !(amd64 || arm64)",
 	},
 }
@@ -138,7 +138,7 @@ const tmplNISTEC = `// Copyright 2022 The Go Authors. All rights reserved.
 package sm2ec
 
 import (
-	"github.com/emmansun/gmsm/internal/sm2ec/fiat"
+	"github.com/yunmoon/gmsm/internal/sm2ec/fiat"
 	"crypto/subtle"
 	"errors"
 	"sync"

@@ -7,12 +7,12 @@ import (
 	"errors"
 	"io"
 
-	"github.com/emmansun/gmsm/internal/bigmod"
-	"github.com/emmansun/gmsm/internal/byteorder"
-	"github.com/emmansun/gmsm/internal/randutil"
-	"github.com/emmansun/gmsm/internal/sm3"
-	"github.com/emmansun/gmsm/internal/sm9/bn256"
-	"github.com/emmansun/gmsm/internal/subtle"
+	"github.com/yunmoon/gmsm/internal/bigmod"
+	"github.com/yunmoon/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/randutil"
+	"github.com/yunmoon/gmsm/internal/sm3"
+	"github.com/yunmoon/gmsm/internal/sm9/bn256"
+	"github.com/yunmoon/gmsm/internal/subtle"
 )
 
 // SM9 ASN.1 format reference: Information security technology - SM9 cryptographic algorithm application specification

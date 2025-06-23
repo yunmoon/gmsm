@@ -5,7 +5,7 @@ import (
 	"encoding/asn1"
 	"errors"
 
-	"github.com/emmansun/gmsm/pkcs"
+	"github.com/yunmoon/gmsm/pkcs"
 )
 
 type encryptedData struct {

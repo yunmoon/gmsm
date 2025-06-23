@@ -11,8 +11,8 @@ import (
 	"hash"
 	"io"
 
-	"github.com/emmansun/gmsm/pkcs/internal/md2"
-	"github.com/emmansun/gmsm/pkcs/internal/rc2"
+	"github.com/yunmoon/gmsm/pkcs/internal/md2"
+	"github.com/yunmoon/gmsm/pkcs/internal/rc2"
 )
 
 var (

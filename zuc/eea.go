@@ -2,8 +2,8 @@
 package zuc
 
 import (
-	"github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/internal/zuc"
+	"github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/internal/zuc"
 )
 
 const (

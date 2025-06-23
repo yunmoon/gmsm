@@ -5,7 +5,7 @@ package sm2ec
 import (
 	"errors"
 
-	"github.com/emmansun/gmsm/internal/sm2ec/fiat"
+	"github.com/yunmoon/gmsm/internal/sm2ec/fiat"
 )
 
 // P256OrdInverse, sets out to in⁻¹ mod org(G). If in is zero, out will be zero.
@@ -14,7 +14,6 @@ import (
 // 1111111111111111111111111111111111111111111111111111111111111111
 // 0111001000000011110111110110101100100001110001100000010100101011
 // 0101001110111011111101000000100100111001110101010100000100100001
-//
 func P256OrdInverse(k []byte) ([]byte, error) {
 	if len(k) != 32 {
 		return nil, errors.New("invalid scalar length")

@@ -7,8 +7,8 @@ package cfca
 import (
 	"crypto"
 
-	"github.com/emmansun/gmsm/pkcs7"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/pkcs7"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 func signMessage(data []byte, cert *smx509.Certificate, key crypto.PrivateKey, detached bool) ([]byte, error) {

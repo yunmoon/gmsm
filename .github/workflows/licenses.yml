@@ -18,4 +18,4 @@ jobs:
         run: go install github.com/google/go-licenses@latest
       - name: Generate license files
         run: |
-          go-licenses report github.com/emmansun/gmsm > third-party-licenses.md
+          go-licenses report github.com/yunmoon/gmsm > third-party-licenses.md

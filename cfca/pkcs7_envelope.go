@@ -7,9 +7,9 @@ package cfca
 import (
 	"crypto"
 
-	"github.com/emmansun/gmsm/pkcs"
-	"github.com/emmansun/gmsm/pkcs7"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/pkcs"
+	"github.com/yunmoon/gmsm/pkcs7"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 // EnvelopeMessage creates and returns an envelope data PKCS7 structure (DER encoded) with encrypted

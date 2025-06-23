@@ -10,7 +10,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 type Curve interface {

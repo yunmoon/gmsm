@@ -6,7 +6,7 @@ import (
 	"crypto/x509/pkix"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 func TestNewHashFromPRF(t *testing.T) {

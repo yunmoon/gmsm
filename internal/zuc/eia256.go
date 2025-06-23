@@ -3,7 +3,7 @@ package zuc
 import (
 	"fmt"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 type ZUC256Mac struct {

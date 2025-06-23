@@ -7,7 +7,7 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 // This file contains a math/big implementation of SM2 key exchange which is deprecated, please use ecdh instead.

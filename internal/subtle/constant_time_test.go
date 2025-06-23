@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 func TestConstantTimeLessOrEqBytes(t *testing.T) {

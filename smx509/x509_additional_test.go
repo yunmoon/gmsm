@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/emmansun/gmsm/ecdh"
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/ecdh"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 const publicKeyPemFromAliKms = `-----BEGIN PUBLIC KEY-----

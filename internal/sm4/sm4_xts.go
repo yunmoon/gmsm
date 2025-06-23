@@ -5,7 +5,7 @@ package sm4
 import (
 	"crypto/cipher"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 // Assert that sm4CipherAsm implements the xtsEncAble and xtsDecAble interfaces.
@@ -79,6 +79,6 @@ func (x *xts) CryptBlocks(dst, src []byte) {
 			decryptSm4XtsGB(&x.b.dec[0], &x.tweak, dst, src)
 		} else {
 			decryptSm4Xts(&x.b.dec[0], &x.tweak, dst, src)
-		}	
+		}
 	}
 }

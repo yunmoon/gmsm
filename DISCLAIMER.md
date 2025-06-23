@@ -1,7 +1,7 @@
 # 免责声明
 
 ## 版权声明
-本项目(gmsm)代码的版权归[Sun Yimin](mailto:emman.sun@foxmail.com)所有，并按照[MIT](https://github.com/emmansun/gmsm/blob/main/LICENSE)进行分发。使用本项目的代码时，必须遵守相应的许可证条款。
+本项目(gmsm)代码的版权归[Sun Yimin](mailto:emman.sun@foxmail.com)所有，并按照[MIT](https://github.com/yunmoon/gmsm/blob/main/LICENSE)进行分发。使用本项目的代码时，必须遵守相应的许可证条款。
 
 ## 免责条款
 

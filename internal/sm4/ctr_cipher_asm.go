@@ -6,7 +6,7 @@ import (
 	"crypto/cipher"
 	"crypto/subtle"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 // Assert that sm4CipherAsm implements the ctrAble interface.
@@ -43,7 +43,6 @@ func (c *sm4CipherAsm) NewCTR(iv []byte) cipher.Stream {
 	}
 	return s
 }
-
 
 func (x *ctr) genCtr(start int) {
 	if start >= BlockSize {

@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 func TestCmul(t *testing.T) {

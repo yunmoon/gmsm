@@ -7,7 +7,7 @@ import (
 
 	"errors"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 const GF128_FDBK byte = 0x87

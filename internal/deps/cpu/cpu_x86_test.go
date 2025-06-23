@@ -9,7 +9,7 @@ package cpu_test
 import (
 	"testing"
 
-	. "github.com/emmansun/gmsm/internal/deps/cpu"
+	. "github.com/yunmoon/gmsm/internal/deps/cpu"
 )
 
 func TestX86ifAVX2hasAVX(t *testing.T) {

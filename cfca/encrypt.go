@@ -8,9 +8,9 @@ import (
 	"crypto/cipher"
 	"errors"
 
-	"github.com/emmansun/gmsm/padding"
-	"github.com/emmansun/gmsm/sm3"
-	"github.com/emmansun/gmsm/sm4"
+	"github.com/yunmoon/gmsm/padding"
+	"github.com/yunmoon/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 // NewSM4CBCBlockMode creates a new SM4-CBC block mode with the password.

@@ -5,8 +5,8 @@ import (
 	"crypto/subtle"
 	"errors"
 
-	"github.com/emmansun/gmsm/internal/alias"
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 // A LengthPreservingMode represents a block cipher running in a length preserving mode (HCTR,

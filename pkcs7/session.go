@@ -11,8 +11,8 @@ import (
 	"crypto/rsa"
 	"errors"
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 // Session is an interface that provides methods to generate and encrypt/decrypt data keys

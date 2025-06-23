@@ -9,7 +9,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 func TestSignVerifyLegacy(t *testing.T) {

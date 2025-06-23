@@ -7,8 +7,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/emmansun/gmsm/padding"
-	"github.com/emmansun/gmsm/sm9"
+	"github.com/yunmoon/gmsm/padding"
+	"github.com/yunmoon/gmsm/sm9"
 )
 
 func TestInvalidKeySize(t *testing.T) {

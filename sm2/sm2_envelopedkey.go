@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/sm4"
+	"github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/sm4"
 	"golang.org/x/crypto/cryptobyte"
 	cryptobyte_asn1 "golang.org/x/crypto/cryptobyte/asn1"
 )
@@ -33,7 +33,7 @@ var (
 // This implementation follows GB/T 35276-2017, uses SM4 cipher to encrypt sm2 private key.
 // Please note the standard did NOT clarify if the ECB mode requires padding or not.
 //
-// This function can be used in CSRResponse.encryptedPrivateKey, reference GM/T 0092-2020 
+// This function can be used in CSRResponse.encryptedPrivateKey, reference GM/T 0092-2020
 // Specification of certificate request syntax based on SM2 cryptographic algorithm.
 func MarshalEnvelopedPrivateKey(rand io.Reader, pub *ecdsa.PublicKey, tobeEnveloped *PrivateKey) ([]byte, error) {
 	// encrypt sm2 private key

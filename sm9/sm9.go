@@ -8,8 +8,8 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/emmansun/gmsm/internal/sm9"
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/internal/sm9"
+	"github.com/yunmoon/gmsm/sm3"
 	"golang.org/x/crypto/cryptobyte"
 	"golang.org/x/crypto/cryptobyte/asn1"
 )
@@ -347,13 +347,14 @@ func NewDecrypterOptsWithUID(opts EncrypterOpts, uid []byte) (*DecrypterOptsWith
 
 // Decrypt decrypts the given ciphertext using the provided EncryptPrivateKey.
 // The decryption process depends on the type of the opts parameter:
-// - If opts is of type []byte, it uses DecryptASN1 to decrypt the ciphertext.
-// - If opts is of type *DecrypterOptsWithUID, it first checks if the ciphertext
-//   is a valid ASN.1 sequence. If it is not, and EncrypterOpts is nil, it returns
-//   an error indicating invalid ASN.1 data. Otherwise, it uses the Decrypt function
-//   with the provided UID and EncrypterOpts to decrypt the ciphertext. If the
-//   ciphertext is a valid ASN.1 sequence, it uses DecryptASN1 with the UID to
-//   decrypt the ciphertext.
+//   - If opts is of type []byte, it uses DecryptASN1 to decrypt the ciphertext.
+//   - If opts is of type *DecrypterOptsWithUID, it first checks if the ciphertext
+//     is a valid ASN.1 sequence. If it is not, and EncrypterOpts is nil, it returns
+//     an error indicating invalid ASN.1 data. Otherwise, it uses the Decrypt function
+//     with the provided UID and EncrypterOpts to decrypt the ciphertext. If the
+//     ciphertext is a valid ASN.1 sequence, it uses DecryptASN1 with the UID to
+//     decrypt the ciphertext.
+//
 // If opts is of an unsupported type, it returns an error indicating invalid decrypter options.
 func (priv *EncryptPrivateKey) Decrypt(rand io.Reader, ciphertext []byte, opts crypto.DecrypterOpts) ([]byte, error) {
 	switch xx := opts.(type) {

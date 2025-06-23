@@ -5,8 +5,8 @@ import (
 	"hash"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
-	"github.com/emmansun/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/cryptotest"
 )
 
 var key [16]byte

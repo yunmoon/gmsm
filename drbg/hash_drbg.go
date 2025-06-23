@@ -5,8 +5,8 @@ import (
 	"hash"
 	"time"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 const HASH_DRBG_SEED_SIZE = 55

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 var ecKeyTests = []struct {

@@ -3,7 +3,7 @@
 package zuc
 
 import (
-	"github.com/emmansun/gmsm/internal/cpuid"
+	"github.com/yunmoon/gmsm/internal/cpuid"
 )
 
 var supportsGFMUL = cpuid.HasGFMUL || cpuid.HasVPMSUMD

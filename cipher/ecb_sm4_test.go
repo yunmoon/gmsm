@@ -6,8 +6,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/sm4"
+	"github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 var ecbSM4Tests = []struct {

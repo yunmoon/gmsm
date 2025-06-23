@@ -7,7 +7,7 @@ import (
 	"crypto/cipher"
 	"crypto/subtle"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 // Assert that sm4CipherAsm implements the cbcEncAble and cbcDecAble interfaces.

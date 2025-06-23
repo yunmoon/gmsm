@@ -8,16 +8,18 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/emmansun/gmsm/ecdh"
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/ecdh"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 const ecPrivKeyVersion = 1
 
 // ecPrivateKey reflects an ASN.1 Elliptic Curve Private Key Structure.
 // References:
-//   RFC 5915
-//   SEC1 - http://www.secg.org/sec1-v2.pdf
+//
+//	RFC 5915
+//	SEC1 - http://www.secg.org/sec1-v2.pdf
+//
 // Per RFC 5915 the NamedCurveOID is marked as ASN.1 OPTIONAL, however in
 // most cases it is not.
 type ecPrivateKey struct {

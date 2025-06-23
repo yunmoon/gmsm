@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/emmansun/gmsm/zuc"
+	"github.com/yunmoon/gmsm/zuc"
 )
 
 func ExampleNewCipher() {

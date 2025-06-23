@@ -6,7 +6,7 @@
 
 package sm3
 
-import "github.com/emmansun/gmsm/internal/byteorder"
+import "github.com/yunmoon/gmsm/internal/byteorder"
 
 // p || state || words
 // p = 64 * 8 * 2 = 1024

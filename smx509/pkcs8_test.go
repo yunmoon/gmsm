@@ -14,8 +14,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/sm9"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm9"
 )
 
 // Generated using:
@@ -267,7 +267,7 @@ func TestMarshalPKCS8SM9SignMasterPrivateKey(t *testing.T) {
 	if !ok {
 		t.Fatalf("not expected key")
 	}
-	
+
 	if !masterKey.Equal(masterKey2) {
 		t.Fatalf("not same key")
 	}

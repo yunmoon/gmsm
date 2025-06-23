@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/sm2ec"
+	"github.com/yunmoon/gmsm/internal/sm2ec"
 )
 
 func randomK(r io.Reader, ord *big.Int) (k *big.Int, err error) {

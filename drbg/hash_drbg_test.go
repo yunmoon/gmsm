@@ -9,7 +9,7 @@ import (
 	"hash"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 var tests = []struct {

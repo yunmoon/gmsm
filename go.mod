@@ -1,4 +1,4 @@
-module github.com/emmansun/gmsm
+module github.com/yunmoon/gmsm
 
 go 1.23.0
 

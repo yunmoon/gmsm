@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/emmansun/gmsm/pkcs"
+	"github.com/yunmoon/gmsm/pkcs"
 )
 
 func TestEncryptUsingPSK(t *testing.T) {

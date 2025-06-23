@@ -6,7 +6,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm9"
+	"github.com/yunmoon/gmsm/sm9"
 )
 
 func TestSignASN1(t *testing.T) {

@@ -8,9 +8,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/emmansun/gmsm/pkcs"
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/pkcs"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 // from https://www.gmcert.org/

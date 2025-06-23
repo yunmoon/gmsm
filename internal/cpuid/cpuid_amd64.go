@@ -1,6 +1,6 @@
 package cpuid
 
-import "github.com/emmansun/gmsm/internal/deps/cpu"
+import "github.com/yunmoon/gmsm/internal/deps/cpu"
 
 var (
 	HasAES     = cpu.X86.HasAES

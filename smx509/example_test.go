@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 func ExampleParsePKIXPublicKey() {
@@ -158,5 +158,5 @@ HKvWWAuXAPXDI/SVtJeXwbUh6d3UnesDRw==
 	}
 	fmt.Println("priv is of type SM2:", key.Params().Name)
 	// Output:
-	// priv is of type SM2: sm2p256v1	
+	// priv is of type SM2: sm2p256v1
 }

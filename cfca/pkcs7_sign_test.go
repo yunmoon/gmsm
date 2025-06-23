@@ -9,7 +9,7 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 func TestSignMessageAttach(t *testing.T) {

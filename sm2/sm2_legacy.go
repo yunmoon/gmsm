@@ -10,9 +10,9 @@ import (
 	"math/big"
 	"strings"
 
-	_subtle "github.com/emmansun/gmsm/internal/subtle"
-	"github.com/emmansun/gmsm/sm2/sm2ec"
-	"github.com/emmansun/gmsm/sm3"
+	_subtle "github.com/yunmoon/gmsm/internal/subtle"
+	"github.com/yunmoon/gmsm/sm2/sm2ec"
+	"github.com/yunmoon/gmsm/sm3"
 	"golang.org/x/crypto/cryptobyte"
 	"golang.org/x/crypto/cryptobyte/asn1"
 )

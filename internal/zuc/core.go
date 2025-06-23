@@ -5,7 +5,7 @@ import (
 	"math/bits"
 	"strconv"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 const (

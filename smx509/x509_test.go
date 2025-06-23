@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/emmansun/gmsm/internal/godebug"
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/internal/godebug"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 func TestMarshalInvalidPublicKey(t *testing.T) {

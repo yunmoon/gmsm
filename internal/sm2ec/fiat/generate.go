@@ -135,7 +135,7 @@ import (
 	"crypto/subtle"
 	"errors"
 
-	_subtle "github.com/emmansun/gmsm/internal/subtle"
+	_subtle "github.com/yunmoon/gmsm/internal/subtle"
 )
 
 // {{ .Element }} is an integer modulo {{ .Prime }}.

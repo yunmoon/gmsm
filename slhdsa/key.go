@@ -15,7 +15,7 @@ import (
 	"hash"
 	"io"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 type PublicKey struct {

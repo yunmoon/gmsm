@@ -15,13 +15,14 @@ import (
 	"crypto/subtle"
 	"errors"
 	"fmt"
+	_sm2ec "github.com/yunmoon/gmsm/internal/sm2ec"
 	"io"
 	"math/big"
 
-	"github.com/emmansun/gmsm/internal/bigmod"
-	_sm2ec "github.com/emmansun/gmsm/internal/sm2ec"
-	_subtle "github.com/emmansun/gmsm/internal/subtle"
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/internal/bigmod"
+
+	_subtle "github.com/yunmoon/gmsm/internal/subtle"
+	"github.com/yunmoon/gmsm/sm3"
 	"golang.org/x/crypto/cryptobyte"
 	"golang.org/x/crypto/cryptobyte/asn1"
 )
@@ -90,6 +91,18 @@ type EncrypterOpts struct {
 	ciphertextSplicingOrder ciphertextSplicingOrder
 }
 
+func (o *EncrypterOpts) SetCiphertextEncoding(ciphertextEncoding ciphertextEncoding) {
+	o.ciphertextEncoding = ciphertextEncoding
+}
+
+func (o *EncrypterOpts) SetPointMarshalMode(pointMarshalMode pointMarshalMode) {
+	o.pointMarshalMode = pointMarshalMode
+}
+
+func (o *EncrypterOpts) SetCiphertextSplicingOrder(ciphertextSplicingOrder ciphertextSplicingOrder) {
+	o.ciphertextSplicingOrder = ciphertextSplicingOrder
+}
+
 // DecrypterOpts represents the options for the decryption process.
 // It includes settings for how the ciphertext is encoded and how the
 // components of the ciphertext are spliced together.
@@ -101,6 +114,14 @@ type EncrypterOpts struct {
 type DecrypterOpts struct {
 	ciphertextEncoding      ciphertextEncoding
 	ciphertextSplicingOrder ciphertextSplicingOrder
+}
+
+func (o *DecrypterOpts) SetCiphertextEncoding(ciphertextEncoding ciphertextEncoding) {
+	o.ciphertextEncoding = ciphertextEncoding
+}
+
+func (o *DecrypterOpts) SetCiphertextSplicingOrder(ciphertextSplicingOrder ciphertextSplicingOrder) {
+	o.ciphertextSplicingOrder = ciphertextSplicingOrder
 }
 
 // NewPlainEncrypterOpts creates a SM2 non-ASN1 encrypter options.

@@ -14,9 +14,9 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/sm3"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm3"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 func testSign(t *testing.T, isSM bool, content []byte, sigalgs []x509.SignatureAlgorithm) {

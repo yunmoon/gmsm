@@ -8,11 +8,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/alias"
-	"github.com/emmansun/gmsm/internal/bigmod"
-	"github.com/emmansun/gmsm/internal/sm3"
-	"github.com/emmansun/gmsm/internal/sm4"
-	"github.com/emmansun/gmsm/internal/sm9/bn256"
+	"github.com/yunmoon/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/bigmod"
+	"github.com/yunmoon/gmsm/internal/sm3"
+	"github.com/yunmoon/gmsm/internal/sm4"
+	"github.com/yunmoon/gmsm/internal/sm9/bn256"
 )
 
 func TestHashH1(t *testing.T) {

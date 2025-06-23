@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"os"
 
-    "github.com/emmansun/gmsm/pkcs7"
+    "github.com/yunmoon/gmsm/pkcs7"
 )
 
 func SignAndDetach(content []byte, cert *x509.Certificate, privkey *rsa.PrivateKey) (signed []byte, err error) {

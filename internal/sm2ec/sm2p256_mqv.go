@@ -4,7 +4,7 @@ import (
 	"errors"
 	"math/bits"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 var p256Order = [4]uint64{0x53bbf40939d54123, 0x7203df6b21c6052b,

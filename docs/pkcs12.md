@@ -1,11 +1,11 @@
-# [go-pkcs12](https://github.com/emmansun/go-pkcs12)应用指南
+# [go-pkcs12](https://github.com/yunmoon/go-pkcs12)应用指南
 [PKCS #12: Personal Information Exchange Syntax v1.1](https://datatracker.ietf.org/doc/html/rfc7292)，PKCS12目前似乎没有相应的国密标准。
 定制PKCS12的目的是：
 1. 可以处理**SM2**私钥和证书。
 2. 可以替代、使用一些商密算法，主要是**SM3**和**SM4**。
 
 ## PKCS#12的解析
-[go-pkcs12](https://github.com/emmansun/go-pkcs12)提供三个方法：
+[go-pkcs12](https://github.com/yunmoon/go-pkcs12)提供三个方法：
 
 | 方法 | 适用 | 具体说明 |  
 | :--- | :--- | :--- |  
@@ -180,7 +180,7 @@ var ShangMi2024 = &Encoder{
 ```
 
 ## 解析加密的PKCS#8私钥
-[go-pkcs12](https://github.com/emmansun/go-pkcs12) 也提供了```ParsePKCS8PrivateKey```方法，相比**pkcs8**的类似方法，这里特别支持**PBES-PKCS12**加密算法。
+[go-pkcs12](https://github.com/yunmoon/go-pkcs12) 也提供了```ParsePKCS8PrivateKey```方法，相比**pkcs8**的类似方法，这里特别支持**PBES-PKCS12**加密算法。
 * PBE-SHA1-RC2-128
 * PBE-SHA1-RC2-40
 * PBE-SHA1-3DES

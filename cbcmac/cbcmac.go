@@ -9,7 +9,7 @@ import (
 	"crypto/cipher"
 	"crypto/subtle"
 
-	"github.com/emmansun/gmsm/padding"
+	"github.com/yunmoon/gmsm/padding"
 )
 
 // Reference: GB/T 15821.1-2020 Security techniques

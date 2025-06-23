@@ -16,8 +16,8 @@ import (
 
 	_ "crypto/sha1" // for crypto.SHA1
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 // PKCS7 Represents a PKCS7 structure

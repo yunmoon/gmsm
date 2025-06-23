@@ -15,8 +15,8 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
-	"github.com/emmansun/gmsm/internal/sm2ec/fiat"
+	"github.com/yunmoon/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/sm2ec/fiat"
 )
 
 // SM2P256Point is a SM2P256 point. The zero value is NOT valid.

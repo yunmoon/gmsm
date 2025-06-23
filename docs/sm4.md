@@ -59,10 +59,10 @@ Go语言实现的工作模式，主要有三类：
 * 使用预定义的ASN.1结构
 * 和密文简单拼接：譬如CBC工作模式：前面16字节IV，后面ciphertext；GCM模式（使用默认Tag长度和Nonce长度）：前面12字节Nonce，后面ciphertext。
 
-至于要将二进制转为文本传输、存储，编个码就行：标准base64 / URL base64 / HEX，事先协调、定义好就可以了。这里顺便推荐一下[性能更好的BASE64实现](https://github.com/emmansun/base64)。
+至于要将二进制转为文本传输、存储，编个码就行：标准base64 / URL base64 / HEX，事先协调、定义好就可以了。这里顺便推荐一下[性能更好的BASE64实现](https://github.com/yunmoon/base64)。
 
 ## API文档及示例
-这里只列出GCM/CBC的例子，其余请参考[API Document](https://godoc.org/github.com/emmansun/gmsm)。
+这里只列出GCM/CBC的例子，其余请参考[API Document](https://godoc.org/github.com/yunmoon/gmsm)。
 
 ### GCM示例
 ```go
@@ -244,13 +244,13 @@ SM4分组密码算法的软件高效实现，不算CPU指令支持的话，已�
 * S盒和L转换预计算，本软件库纯Go语言实现采用该方法
 * SIMD并行处理：并行查表
 * SIMD并行处理：借助CPU的AES指令，本软件库采用该方法
-* SIMD并行处理：借助CPU的GFNI指令，部分新AMD64 CPU架构支持该指令，本软件库尚未实现[SM4 with GFNI](https://github.com/emmansun/gmsm/wiki/SM4-with-GFNI)
-* SIMD并行处理：位切片(bitslicing)，[参考实现](https://github.com/emmansun/sm4bs)
+* SIMD并行处理：借助CPU的GFNI指令，部分新AMD64 CPU架构支持该指令，本软件库尚未实现[SM4 with GFNI](https://github.com/yunmoon/gmsm/wiki/SM4-with-GFNI)
+* SIMD并行处理：位切片(bitslicing)，[参考实现](https://github.com/yunmoon/sm4bs)
 
 当然，这些与有CPU指令支持的AES算法相比，性能差距依然偏大，要是工作模式不支持并行，差距就更巨大了。
 
 ### 混合方式
-从**v0.25.0**开始，AMD64/ARM64 支持AES-NI的CPU架构下，**默认会使用混合方式**，即```cipher.Block```的方法会用纯Go语言实现，而对于可以并行的加解密模式，则还是会尽量采用AES-NI和SIMD并行处理。您可以通过环境变量```FORCE_SM4BLOCK_AESNI=1```来强制都使用AES-NI实现（和v0.25.0之前版本的行为一样）。请参考[SM4: 单block的性能问题](https://github.com/emmansun/gmsm/discussions/172)。
+从**v0.25.0**开始，AMD64/ARM64 支持AES-NI的CPU架构下，**默认会使用混合方式**，即```cipher.Block```的方法会用纯Go语言实现，而对于可以并行的加解密模式，则还是会尽量采用AES-NI和SIMD并行处理。您可以通过环境变量```FORCE_SM4BLOCK_AESNI=1```来强制都使用AES-NI实现（和v0.25.0之前版本的行为一样）。请参考[SM4: 单block的性能问题](https://github.com/yunmoon/gmsm/discussions/172)。
 
 **注意**：目前的纯Golang SM4实现（查表实现）是以可变时间运行的！
 

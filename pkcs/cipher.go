@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"io"
 
-	smcipher "github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/padding"
+	smcipher "github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/padding"
 )
 
 // Cipher represents a cipher for encrypting the key material

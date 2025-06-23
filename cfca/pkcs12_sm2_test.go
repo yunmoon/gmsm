@@ -7,8 +7,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 var v2exKeyPem = `-----BEGIN CFCA KEY-----

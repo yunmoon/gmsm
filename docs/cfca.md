@@ -87,7 +87,7 @@ SADK 3.2之后的版本，支持下列SM2密文格式(encryptedType)：
 
 ```cfca.sadk.util.p7SignFileAttach / cfca.sadk.util.p7SignFileDetach```类似，只是本软件库不提供对应方法，您可以通过```pkcs7.SignWithoutAttr```自己实现。
 
-参考[cfca sadk 3.0.2.0](https://github.com/emmansun/gmsm/issues/260)
+参考[cfca sadk 3.0.2.0](https://github.com/yunmoon/gmsm/issues/260)
 
 **v0.29.6**之后，请直接使用
 * `cfca.SignMessageAttach`

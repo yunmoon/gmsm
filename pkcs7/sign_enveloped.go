@@ -7,8 +7,8 @@ import (
 	"encoding/asn1"
 	"errors"
 
-	"github.com/emmansun/gmsm/pkcs"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/pkcs"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 // It is recommended to use a sequential combination of the signed-data and the enveloped-data content types instead of using the signed-and-enveloped-data content type,

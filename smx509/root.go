@@ -3,7 +3,7 @@ package smx509
 import (
 	"sync"
 
-	"github.com/emmansun/gmsm/internal/godebug"
+	"github.com/yunmoon/gmsm/internal/godebug"
 )
 
 var (

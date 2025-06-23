@@ -14,7 +14,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 func TestCreateCertificateRequest(t *testing.T) {

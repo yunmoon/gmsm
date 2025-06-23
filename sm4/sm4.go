@@ -5,7 +5,7 @@ import (
 	"crypto/cipher"
 	"strconv"
 
-	"github.com/emmansun/gmsm/internal/sm4"
+	"github.com/yunmoon/gmsm/internal/sm4"
 )
 
 // BlockSize the sm4 block size in bytes.

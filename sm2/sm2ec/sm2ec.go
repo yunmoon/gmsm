@@ -6,7 +6,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/emmansun/gmsm/internal/sm2ec"
+	"github.com/yunmoon/gmsm/internal/sm2ec"
 )
 
 var sm2p256 = &sm2Curve{newPoint: sm2ec.NewSM2P256Point}

@@ -4,7 +4,7 @@
 //                          256-bit primes"
 // https://link.springer.com/article/10.1007%2Fs13389-014-0090-x
 // https://eprint.iacr.org/2013/816.pdf
-// https://github.com/emmansun/gmsm/wiki/SM2-WWMM-(2)
+// https://github.com/yunmoon/gmsm/wiki/SM2-WWMM-(2)
 //go:build !(purego || plugin)
 
 #include "textflag.h"

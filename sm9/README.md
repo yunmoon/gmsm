@@ -18,7 +18,7 @@
 
     goos: windows
     goarch: amd64
-    pkg: github.com/emmansun/gmsm/sm9
+    pkg: github.com/yunmoon/gmsm/sm9
     cpu: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
     BenchmarkSign-8          	    3492	    319540 ns/op	   19752 B/op	     545 allocs/op
     BenchmarkVerify-8        	     806	   1475192 ns/op	  161320 B/op	    3894 allocs/op
@@ -31,7 +31,7 @@
 
     goos: windows
     goarch: amd64
-    pkg: github.com/emmansun/gmsm/sm9
+    pkg: github.com/yunmoon/gmsm/sm9
     cpu: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
     BenchmarkGenerateSignPrivKey-8      	   18608	     65422 ns/op	     944 B/op	      14 allocs/op
     BenchmarkGenerateEncryptPrivKey-8   	    8486	    151201 ns/op	    1072 B/op	      14 allocs/op

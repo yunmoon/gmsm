@@ -11,9 +11,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/emmansun/gmsm/pkcs"
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/pkcs"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 func TestRecipientInfo(t *testing.T) {
@@ -37,7 +37,7 @@ func TestRecipientInfo(t *testing.T) {
 	}
 
 	recipientInfo.IssuerAndSerialNumber = issuerAndSerial{
-		IssuerName: asn1.RawValue{},
+		IssuerName:   asn1.RawValue{},
 		SerialNumber: big.NewInt(123456),
 	}
 	bytes, err = asn1.Marshal(recipientInfo)

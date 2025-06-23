@@ -24,7 +24,7 @@ import (
 	"unicode/utf16"
 	"unicode/utf8"
 
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm2"
 	"golang.org/x/crypto/cryptobyte"
 	cryptobyte_asn1 "golang.org/x/crypto/cryptobyte/asn1"
 )

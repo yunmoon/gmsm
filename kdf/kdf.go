@@ -5,7 +5,7 @@ import (
 	"encoding"
 	"hash"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 // KdfInterface is the interface implemented by some specific Hash implementations.

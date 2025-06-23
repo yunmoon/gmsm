@@ -14,7 +14,7 @@ import (
 	"encoding/pem"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 func TestCreateCFCACertificateRequest(t *testing.T) {

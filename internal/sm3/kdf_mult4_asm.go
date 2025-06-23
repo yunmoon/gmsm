@@ -6,7 +6,7 @@
 
 package sm3
 
-import "github.com/emmansun/gmsm/internal/byteorder"
+import "github.com/yunmoon/gmsm/internal/byteorder"
 
 // prepare data template: remaining data + [ct] + padding + length
 // p will be 1 or 2 blocks according to the length of remaining data

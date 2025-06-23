@@ -42,7 +42,7 @@ SM9标识密码算法用于签名和加密的主公私钥对是分开的，需�
 
 用户签名、加密私钥的ASN.1数据格式定义请参考《GB/T 41389-2022 信息安全技术 SM9密码算法使用规范》，和椭圆曲线点的ASN.1数据格式类似。本软件实现了相应的Marshal/Unmarshal方法。
 
-目前```smx509```中实现的```MarshalPKCS8PrivateKey/ParsePKCS8PrivateKey```没有相关标准，只是为了和[gmssl](https://github.com/guanzhi/GmSSL)互操作验证，请参考[sm9:【feature】是否考虑支持 pem 格式的公私钥输出](https://github.com/emmansun/gmsm/issues/86)。
+目前```smx509```中实现的```MarshalPKCS8PrivateKey/ParsePKCS8PrivateKey```没有相关标准，只是为了和[gmssl](https://github.com/guanzhi/GmSSL)互操作验证，请参考[sm9:【feature】是否考虑支持 pem 格式的公私钥输出](https://github.com/yunmoon/gmsm/issues/86)。
 ```go
 func TestMarshalPKCS8SM9SignPrivateKey(t *testing.T) {
 	masterKey, err := sm9.GenerateSignMasterKey(rand.Reader)
@@ -319,11 +319,11 @@ func ExampleEncryptPrivateKey_Decrypt() {
 密文封装结果ASN.1格式请参考参考《GB/T 41389-2022 信息安全技术 SM9密码算法使用规范》。
 
 SM9公钥加密算法支持多种对称加密算法，不像SM2公钥加密算法，只支持XOR。不过由于非XOR对称加密算法有几个需要IV，而规范没有定义，所以会有互操作问题，
-* [关于SM9 非XOR加密标准问题](https://github.com/emmansun/gmsm/discussions/112)。
+* [关于SM9 非XOR加密标准问题](https://github.com/yunmoon/gmsm/discussions/112)。
 * 《GB/T 41389-2022 信息安全技术 SM9密码算法使用规范》6.1.5 加密数据格式。
 
 ## 密钥交换
-在这里不详细介绍使用方法，一般只有tls/tlcp才会用到，普通应用通常不会涉及这一块，请参考[API Document](https://godoc.org/github.com/emmansun/gmsm)。
+在这里不详细介绍使用方法，一般只有tls/tlcp才会用到，普通应用通常不会涉及这一块，请参考[API Document](https://godoc.org/github.com/yunmoon/gmsm)。
 
 ## 性能
-参考[SM9实现及优化](https://github.com/emmansun/gmsm/wiki/SM9%E5%AE%9E%E7%8E%B0%E5%8F%8A%E4%BC%98%E5%8C%96)。
+参考[SM9实现及优化](https://github.com/yunmoon/gmsm/wiki/SM9%E5%AE%9E%E7%8E%B0%E5%8F%8A%E4%BC%98%E5%8C%96)。

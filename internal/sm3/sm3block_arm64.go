@@ -3,8 +3,8 @@
 package sm3
 
 import (
+	"github.com/yunmoon/gmsm/internal/deps/cpu"
 	"os"
-	"github.com/emmansun/gmsm/internal/deps/cpu"
 )
 
 var useSM3NI = cpu.ARM64.HasSM3 && os.Getenv("DISABLE_SM3NI") != "1"

@@ -9,8 +9,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/emmansun/gmsm/sm3"
-	"github.com/emmansun/gmsm/sm4"
+	"github.com/yunmoon/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 const (

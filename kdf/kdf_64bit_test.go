@@ -5,7 +5,7 @@ package kdf
 import (
 	"testing"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 // This case should be failed on 32bits system.

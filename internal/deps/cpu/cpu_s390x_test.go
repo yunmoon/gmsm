@@ -9,7 +9,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/emmansun/gmsm/internal/deps/cpu"
+	"github.com/yunmoon/gmsm/internal/deps/cpu"
 )
 
 var s390xTests = []struct {

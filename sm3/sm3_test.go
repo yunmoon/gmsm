@@ -13,8 +13,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/deps/cpu"
-	"github.com/emmansun/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/internal/deps/cpu"
 )
 
 type sm3Test struct {

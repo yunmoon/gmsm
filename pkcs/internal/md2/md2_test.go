@@ -7,7 +7,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/internal/cryptotest"
 )
 
 type md2Test struct {

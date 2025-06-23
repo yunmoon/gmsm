@@ -9,9 +9,9 @@ import (
 	"io"
 	"os"
 
-	smcipher "github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/padding"
-	"github.com/emmansun/gmsm/sm4"
+	smcipher "github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/padding"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 func Example_encryptCBC() {

@@ -13,9 +13,9 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/sm3"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm3"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 // SignedData is an opaque data structure for creating signed data payloads

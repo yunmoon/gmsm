@@ -5,9 +5,9 @@ import (
 	"crypto/subtle"
 	"io"
 
-	_cipher "github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/padding"
-	"github.com/emmansun/gmsm/sm4"
+	_cipher "github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/padding"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 // EncrypterOpts is an interface implemented by detail encrypt/decrypt mode.

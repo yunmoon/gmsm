@@ -6,7 +6,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/internal/cryptotest"
 )
 
 var zucEEATests = []struct {
@@ -215,7 +215,7 @@ func TestEEAXORKeyStreamAtWithBucketSize(t *testing.T) {
 	src := make([]byte, 10000)
 	expected := make([]byte, 10000)
 	dst := make([]byte, 10000)
-	stateCount := 1 + (10000 + RoundBytes -1) / RoundBytes
+	stateCount := 1 + (10000+RoundBytes-1)/RoundBytes
 	noBucketCipher.XORKeyStream(expected, src)
 
 	t.Run("Make sure the cached states are used once backward", func(t *testing.T) {

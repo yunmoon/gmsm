@@ -15,7 +15,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 var (

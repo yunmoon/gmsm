@@ -7,8 +7,8 @@ import (
 	"io"
 	"testing"
 
-	smcipher "github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/sm4"
+	smcipher "github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 func BenchmarkSM4BCEncrypt1K(b *testing.B) {

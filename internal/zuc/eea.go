@@ -3,8 +3,8 @@ package zuc
 import (
 	"crypto/subtle"
 
-	"github.com/emmansun/gmsm/internal/alias"
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 const (

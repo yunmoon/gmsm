@@ -11,12 +11,12 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/emmansun/gmsm/ecdh"
-	"github.com/emmansun/gmsm/internal/bigmod"
-	"github.com/emmansun/gmsm/internal/randutil"
-	_sm2ec "github.com/emmansun/gmsm/internal/sm2ec"
-	"github.com/emmansun/gmsm/sm2/sm2ec"
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/ecdh"
+	"github.com/yunmoon/gmsm/internal/bigmod"
+	"github.com/yunmoon/gmsm/internal/randutil"
+	_sm2ec "github.com/yunmoon/gmsm/internal/sm2ec"
+	"github.com/yunmoon/gmsm/sm2/sm2ec"
+	"github.com/yunmoon/gmsm/sm3"
 	"golang.org/x/crypto/cryptobyte"
 	"golang.org/x/crypto/cryptobyte/asn1"
 )

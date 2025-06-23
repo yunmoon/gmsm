@@ -3,8 +3,8 @@ package cipher
 import (
 	"crypto/cipher"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
-	"github.com/emmansun/gmsm/internal/cipher/xts"
+	"github.com/yunmoon/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/cipher/xts"
 )
 
 // NewXTSEncrypter creates a Cipher given a function for creating the underlying

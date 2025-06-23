@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/sm2ec"
-	elliptic "github.com/emmansun/gmsm/sm2/sm2ec"
+	"github.com/yunmoon/gmsm/internal/sm2ec"
+	elliptic "github.com/yunmoon/gmsm/sm2/sm2ec"
 )
 
 func TestP256OrdInverse(t *testing.T) {

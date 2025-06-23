@@ -5,9 +5,8 @@ package zuc
 import (
 	"hash"
 
-	"github.com/emmansun/gmsm/internal/zuc"
+	"github.com/yunmoon/gmsm/internal/zuc"
 )
-
 
 // EIA is an interface that extends the hash.Hash interface with an additional
 // Finish method, which finalizes the hash computation with a specified number

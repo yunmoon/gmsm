@@ -17,7 +17,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 func TestVerify(t *testing.T) {

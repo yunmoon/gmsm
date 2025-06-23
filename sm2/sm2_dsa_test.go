@@ -12,7 +12,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 func TestParseRawPrivateKey(t *testing.T) {

@@ -6,7 +6,7 @@ package cipher
 import (
 	goCipher "crypto/cipher"
 
-	"github.com/emmansun/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/alias"
 )
 
 type ecb struct {

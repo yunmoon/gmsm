@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/sm2ec/fiat"
+	"github.com/yunmoon/gmsm/internal/sm2ec/fiat"
 )
 
 var ordN *big.Int

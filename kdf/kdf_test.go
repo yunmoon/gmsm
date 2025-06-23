@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/emmansun/gmsm/sm3"
+	"github.com/yunmoon/gmsm/sm3"
 )
 
 func TestKdf(t *testing.T) {
@@ -56,7 +56,7 @@ func TestKdfOldCase(t *testing.T) {
 
 func shouldPanic(t *testing.T, f func()) {
 	t.Helper()
-	defer func() { 
+	defer func() {
 		t.Helper()
 		err := recover()
 		if err == nil {

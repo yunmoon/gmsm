@@ -14,8 +14,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/emmansun/gmsm/sm2"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/sm2"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 type CertificateRequest = smx509.CertificateRequestCFCA

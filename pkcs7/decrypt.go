@@ -7,8 +7,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/emmansun/gmsm/pkcs"
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/pkcs"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 // IssuerAndSerial is a structure that holds the issuer name and serial number

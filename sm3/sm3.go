@@ -6,7 +6,7 @@ package sm3
 import (
 	"hash"
 
-	"github.com/emmansun/gmsm/internal/sm3"
+	"github.com/yunmoon/gmsm/internal/sm3"
 )
 
 // Size the size of a SM3 checksum in bytes.

@@ -10,7 +10,7 @@ import (
 	"crypto/subtle"
 	"errors"
 
-	_subtle "github.com/emmansun/gmsm/internal/subtle"
+	_subtle "github.com/yunmoon/gmsm/internal/subtle"
 )
 
 // SM2P256Element is an integer modulo 2^256 - 2^224 - 2^96 + 2^64 - 1.

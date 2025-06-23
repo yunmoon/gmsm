@@ -8,7 +8,7 @@ import (
 	"errors"
 	"math/bits"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 const (

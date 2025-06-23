@@ -5,7 +5,7 @@ import (
 	"hash"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/internal/cryptotest"
 )
 
 var zucEIA256Tests = []struct {

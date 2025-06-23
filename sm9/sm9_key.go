@@ -9,7 +9,7 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/emmansun/gmsm/internal/sm9"
+	"github.com/yunmoon/gmsm/internal/sm9"
 	"golang.org/x/crypto/cryptobyte"
 	cryptobyte_asn1 "golang.org/x/crypto/cryptobyte/asn1"
 )

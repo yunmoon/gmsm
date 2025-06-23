@@ -7,8 +7,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/cryptotest"
-	"github.com/emmansun/gmsm/sm4"
+	"github.com/yunmoon/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 var cfbTests = []struct {

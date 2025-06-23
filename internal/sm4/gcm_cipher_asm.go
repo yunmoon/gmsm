@@ -7,8 +7,8 @@ import (
 	"crypto/subtle"
 	"errors"
 
-	"github.com/emmansun/gmsm/internal/alias"
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/alias"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 // Assert that sm4CipherAsm implements the gcmAble interface.

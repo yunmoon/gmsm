@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/emmansun/gmsm/smx509"
+	"github.com/yunmoon/gmsm/smx509"
 )
 
 // Verify is a wrapper around VerifyWithChain() that initializes an empty

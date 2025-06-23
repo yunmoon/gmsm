@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/emmansun/gmsm/internal/byteorder"
+	"github.com/yunmoon/gmsm/internal/byteorder"
 )
 
 func initState4() [4]*[8]uint32 {

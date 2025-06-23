@@ -10,7 +10,7 @@ import (
 	"encoding/asn1"
 	"errors"
 
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 // CSRResponse represents the response of a certificate signing request.
@@ -23,11 +23,11 @@ type CSRResponse struct {
 // GM/T 0092-2020 Specification of certificate request syntax based on SM2 cryptographic algorithm.
 // Section 8 and Appendix A
 //
-// CSRResponse ::= SEQUENCE {
-//	 signCertificate CertificateSet,
-//	 encryptedPrivateKey [0] SM2EnvelopedKey OPTIONAL,
-//   encryptCertificate  [1] CertificateSet OPTIONAL
-// }
+//	CSRResponse ::= SEQUENCE {
+//		 signCertificate CertificateSet,
+//		 encryptedPrivateKey [0] SM2EnvelopedKey OPTIONAL,
+//	  encryptCertificate  [1] CertificateSet OPTIONAL
+//	}
 type tbsCSRResponse struct {
 	SignCerts           []asn1.RawValue `asn1:"set"` // SignCerts ::= SET OF Certificate
 	EncryptedPrivateKey asn1.RawValue   `asn1:"optional,tag:0"`

@@ -50,9 +50,9 @@ import (
 	"golang.org/x/crypto/cryptobyte"
 	cryptobyte_asn1 "golang.org/x/crypto/cryptobyte/asn1"
 
-	"github.com/emmansun/gmsm/ecdh"
-	"github.com/emmansun/gmsm/internal/godebug"
-	"github.com/emmansun/gmsm/sm2"
+	"github.com/yunmoon/gmsm/ecdh"
+	"github.com/yunmoon/gmsm/internal/godebug"
+	"github.com/yunmoon/gmsm/sm2"
 )
 
 // pkixPublicKey reflects a PKIX public key structure. See SubjectPublicKeyInfo

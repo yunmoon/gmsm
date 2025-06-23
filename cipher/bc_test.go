@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/emmansun/gmsm/cipher"
-	"github.com/emmansun/gmsm/internal/cryptotest"
-	"github.com/emmansun/gmsm/sm4"
+	"github.com/yunmoon/gmsm/cipher"
+	"github.com/yunmoon/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 var bcSM4TestVectors = []struct {

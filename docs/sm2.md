@@ -76,7 +76,7 @@ func ExampleNewPublicKey() {
 当然，您也可以使用ecdh包下的方法```ecdh.P256().NewPublicKey```来构造，目前只支持非压缩方式。
 
 ### SM2私钥的解析、构造
-私钥的封装格式主要有以下几种，[相关讨论](https://github.com/emmansun/gmsm/issues/104)：  
+私钥的封装格式主要有以下几种，[相关讨论](https://github.com/yunmoon/gmsm/issues/104)：  
 * RFC 5915 / SEC1 - http://www.secg.org/sec1-v2.pdf
 * PKCS#12
 * PKCS#8
@@ -91,9 +91,9 @@ func ExampleNewPublicKey() {
 | 封装格式 | 解析方法 |
 | :--- | :--- |
 | RFC 5915 / SEC1 | ```smx509.ParseSM2PrivateKey``` |
-| PKCS#12 | 使用 github.com/emmansun/go-pkcs12 解析 |
+| PKCS#12 | 使用 github.com/yunmoon/go-pkcs12 解析 |
 | PKCS#8 | ```smx509.ParsePKCS8PrivateKey```可以处理未加密的；```pkcs8.ParsePKCS8PrivateKeySM2```可以处理未加密的，也可以处理加密的 |
-| PKCS#7 | Cryptographic Message Syntax, 可以参考github.com/emmansun/pkcs7/sign_enveloped_test.go中的```TestParseSignedEvnvelopedData```，测试数据来自 https://www.gmcert.org/ |
+| PKCS#7 | Cryptographic Message Syntax, 可以参考github.com/yunmoon/pkcs7/sign_enveloped_test.go中的```TestParseSignedEvnvelopedData```，测试数据来自 https://www.gmcert.org/ |
 | CFCA自定义封装 | 顾名思义，这个封装是CFCA特定的，修改自PKCS#12，使用```cfca.ParseSM2```方法来解析 |
 |《GB/T 35276-2017 信息安全技术 SM2密码算法使用规范》| 这个规范还比较新，使用```sm2.ParseEnvelopedPrivateKey```解析。典型的应用场景是CA机构返回CSRResponse, 里面包含签名证书、CA生成的SM2加密私钥以及相应的SM2加密证书，其中SM2加密私钥就用该规范定义的方式加密封装。请参考《GM/T 0092-2020 基于SM2算法的证书申请语法规范》 |
 
@@ -262,7 +262,7 @@ func ExamplePrivateKey_Decrypt() {
 ```
 这个SM2私钥的解密方法```Decrypt```，通常情况下，对```crypto.DecrypterOpts```类型参数，您只需传入nil，系统会自己检测输入密文是ASN.1还是普通拼接，但是，如果密文是老旧的C1||C2||C3拼接，请传入相应的```crypto.DecrypterOpts```类型参数，或者您可以先通过上面介绍的辅助函数转换一下。
 
-具体API文档请参考：[API Document](https://godoc.org/github.com/emmansun/gmsm)
+具体API文档请参考：[API Document](https://godoc.org/github.com/yunmoon/gmsm)
 
 ### 关于C1C2C3 和 C1C3C2
 目前有据可查的是，国家密码管理局2010版SM2标准还是用C1C2C3格式，到了2012年标准就改用了C1C3C2，并延续至今。
@@ -294,7 +294,7 @@ func ExamplePrivateKey_Decrypt() {
 因此，虽然在封闭系统中省略格式指示符可能会简化实现或提供其他好处，但它可能会阻碍与其他系统的互操作性。在编码和解码密码数据时，通常最好遵循已建立的标准，以确保最大的兼容性。
 
 ### 性能
-从**v0.27.0**开始，对大数据量的加解密做了优化处理，尤其是KDF并行计算。详情请参考[SM2加解密性能](https://github.com/emmansun/gmsm/wiki/SM2%E5%8A%A0%E8%A7%A3%E5%AF%86%E6%80%A7%E8%83%BD)。
+从**v0.27.0**开始，对大数据量的加解密做了优化处理，尤其是KDF并行计算。详情请参考[SM2加解密性能](https://github.com/yunmoon/gmsm/wiki/SM2%E5%8A%A0%E8%A7%A3%E5%AF%86%E6%80%A7%E8%83%BD)。
 
 ## 与KMS集成
 国内云服务商的KMS服务大都提供SM2密钥，我们一般调用其API进行签名和解密，而验签和加密操作，一般在本地用公钥即可完成。不过需要注意的是，KMS提供的签名通常需要您在本地进行hash操作，而sm2签名的hash又比较特殊，下面示例供参考（自版本**v0.24.0**开始，您可以直接使用函数```sm2.CalculateSM2Hash```）：  
@@ -362,7 +362,7 @@ func RecoverPublicKeysFromSM2Signature(hash, sig []byte) ([]*ecdsa.PublicKey, er
 Rx, Ry代表随机点R的X,Y坐标值。绝大多数情况下，只会返回两个公钥，后两者只有当(r - e) mod N的值小于P-1-N时才可能。
 
 ### 半同态加解密
-EC-ElGamal with SM2的半同态加密（Partially Homomorphic Encryption, PHE）, 支持uint32 或者 int32类型。[Partially Homomorphic Encryption, EC-ElGamal with SM2](https://github.com/emmansun/sm2elgamal).
+EC-ElGamal with SM2的半同态加密（Partially Homomorphic Encryption, PHE）, 支持uint32 或者 int32类型。[Partially Homomorphic Encryption, EC-ElGamal with SM2](https://github.com/yunmoon/sm2elgamal).
 
 ### 环签名
-[Ring Signature Schemes Based on SM2 Digital Signature Algorithm](https://github.com/emmansun/sm2rsign).
+[Ring Signature Schemes Based on SM2 Digital Signature Algorithm](https://github.com/yunmoon/sm2rsign).

@@ -3,8 +3,8 @@
 package zuc
 
 import (
-	"github.com/emmansun/gmsm/internal/cpuid"
-	"github.com/emmansun/gmsm/internal/deps/cpu"
+	"github.com/yunmoon/gmsm/internal/cpuid"
+	"github.com/yunmoon/gmsm/internal/deps/cpu"
 )
 
 // Generate single keyword, 4 bytes.

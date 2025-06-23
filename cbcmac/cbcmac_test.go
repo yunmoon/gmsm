@@ -7,10 +7,10 @@ import (
 	"hash"
 	"testing"
 
-	"github.com/emmansun/gmsm/cbcmac"
-	"github.com/emmansun/gmsm/internal/cryptotest"
-	"github.com/emmansun/gmsm/padding"
-	"github.com/emmansun/gmsm/sm4"
+	"github.com/yunmoon/gmsm/cbcmac"
+	"github.com/yunmoon/gmsm/internal/cryptotest"
+	"github.com/yunmoon/gmsm/padding"
+	"github.com/yunmoon/gmsm/sm4"
 )
 
 func TestCBCMAC(t *testing.T) {
