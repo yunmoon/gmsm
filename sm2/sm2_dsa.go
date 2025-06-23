@@ -213,8 +213,15 @@ func NewPublicKey(key []byte) (*ecdsa.PublicKey, error) {
 	c := p256()
 	// Reject the point at infinity and compressed encodings.
 	// Points at infinity are invalid because they do not represent a valid point on the curve.
-	// Compressed encodings are not supported by this implementation, so they are also rejected.
-	if len(key) == 0 || key[0] != 4 {
+	if len(key) == 0 {
+		return nil, errInvalidPublicKey
+	}
+	//判断是否为压缩公钥
+	if len(key) == 33 && (key[0] == 0x02 || key[0] == 0x03) {
+		return ParseCompressedPublicKey(key)
+	}
+	//正常公钥
+	if key[0] != 4 {
 		return nil, errInvalidPublicKey
 	}
 	// SetBytes also checks that the point is on the curve.
@@ -240,6 +247,37 @@ func NewPublicKey(key []byte) (*ecdsa.PublicKey, error) {
 // can be parsed with [smx509.ParsePKIXPublicKey] (and [encoding/pem]).
 func ParseUncompressedPublicKey(data []byte) (*ecdsa.PublicKey, error) {
 	return NewPublicKey(data)
+}
+
+func ParseCompressedPublicKey(data []byte) (*ecdsa.PublicKey, error) {
+	if len(data) != 33 {
+		return nil, errors.New("compressed public key should be 33 bytes")
+	}
+	c := p256()
+	prefix := data[0]
+	if prefix != 0x02 && prefix != 0x03 {
+		return nil, errors.New("invalid compressed public key prefix")
+	}
+	x := new(big.Int).SetBytes(data[1:])
+	params := c.curve.Params()
+	xCubed := new(big.Int).Exp(x, big.NewInt(3), params.P)
+	a := new(big.Int).Sub(params.P, big.NewInt(3))
+	aX := new(big.Int).Mul(a, x)
+	aX.Mod(aX, params.P)
+	rhs := new(big.Int).Add(xCubed, aX)
+	rhs.Add(rhs, params.B)
+	rhs.Mod(rhs, params.P)
+	// 求解 y^2 = rhs mod p
+	y := new(big.Int).ModSqrt(rhs, params.P)
+	if y == nil {
+		return nil, errors.New("invalid compressed public key, sqrt does not exist")
+	}
+	// 选择偶/奇
+	if (y.Bit(0) == 1 && prefix == 0x02) || (y.Bit(0) == 0 && prefix == 0x03) {
+		y.Sub(params.P, y)
+		y.Mod(y, params.P)
+	}
+	return &ecdsa.PublicKey{Curve: c.curve, X: x, Y: y}, nil
 }
 
 var defaultUID = []byte{0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38}

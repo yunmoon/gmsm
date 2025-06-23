@@ -108,6 +108,24 @@ func TestParseUncompressedPublicKey(t *testing.T) {
 	}
 }
 
+func TestParseCompressedPublicKey(t *testing.T) {
+	keypoints, _ := hex.DecodeString("03b373214e414e1a6cca0c1e69f0673b25121e9181a58a5f17550a8cc4ca3f7a0d")
+	pubkey, err := ParseCompressedPublicKey(keypoints)
+	if err != nil {
+		t.Fatal(err)
+	}
+	ecdhPub, err := PublicKeyToECDH(pubkey)
+	if err != nil {
+		t.Fatal(err)
+	}
+	t.Logf("SM2 公钥(非压缩): %x\n", ecdhPub.Bytes())
+	keypoints, _ = hex.DecodeString("048356e642a40ebd18d29ba3532fbd9f3bbee8f027c3f6f39a5ba2f870369f9988981f5efe55d1c5cdf6c0ef2b070847a14f7fdf4272a8df09c442f3058af94ba2")
+	_, err = ParseCompressedPublicKey(keypoints)
+	if err == nil || err.Error() != "compressed public key should be 33 bytes" {
+		t.Errorf("should throw sm2: compressed public key should be 33 bytes")
+	}
+}
+
 func testRecoverPublicKeysFromSM2Signature(t *testing.T, priv *PrivateKey) {
 	tests := []struct {
 		name      string
